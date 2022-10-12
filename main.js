@@ -1,35 +1,32 @@
 // Your code here.
 
-function getFirstName (person){
+function getFirstName (person){ //getter function - retrieves some data
   return person.firstName
 }
 
-function getLastName (person){
+function getLastName (person){ //getter function
   return person.lastName
 }
 
-function getFullName (person){
+function getFullName (person){  // getter function
   return (`${person.firstName} ${person.lastName}`)
 }
 
-function setFirstName(person,first){
+function setFirstName(person,first){  //setter function - sets or changes some data
   person.firstName = first
-  return person
 }
 
-function setAge(person,newAge){
+function setAge(person,newAge){  // setter function
   person.age = newAge
-  return person
 }
 
 function giveBirthday (person){
   if (person.age>0){
     person.age = person.age+1
   } else {person.age = 1}
-  return person
 }
 
-function marry(person1, person2){
+function marry(person1, person2){  
   person1.married = true;
   person2.married = true;
   person1.spouseName = `${person2.firstName} ${person2.lastName}`;
