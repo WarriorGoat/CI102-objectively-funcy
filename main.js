@@ -9,9 +9,7 @@ function getLastName (person){
 }
 
 function getFullName (person){
-  first = person.firstName
-  last = person.lastName
-  return (`${first} ${last}`)
+  return (`${person.firstName} ${person.lastName}`)
 }
 
 function setFirstName(person,first){
@@ -34,12 +32,8 @@ function giveBirthday (person){
 function marry(person1, person2){
   person1.married = true;
   person2.married = true;
-  first2 = person2.firstName;
-  last2 = person2.lastName;
-  person1.spouseName = `${first2} ${last2}`;
-  first1 = person1.firstName;
-  last1 = person1.lastName;
-  person2.spouseName = `${first1} ${last1}`;
+  person1.spouseName = (`${person2.firstName} ${person2.lastName}`);
+  person2.spouseName = (`${person1.firstName} ${person1.lastName}`);
 }
 
 function divorce (person1, person2){
